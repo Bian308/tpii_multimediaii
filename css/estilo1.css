@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	background-color:#980863;
+}
+main{
+	font-family: 'Open Sans', sans-serif;
+	min-height: 100%; 
+	width: 90%;
+	margin: auto;
+	background-color: #f9ed69;
+}
+
+.grid_container{
+	display: grid;
+	grid-template: 
+	"header    header    header" 100px
+	"sectiona  sectiona  sidebar" auto
+	"sectiona  sectiona  sidebar" auto
+	"footer    footer    footer" 70px
+
+	;
+
+}
+
+.header{
+	grid-area: header;
+	background-color: #D80C8C;
+}
+
+.sectiona{
+	grid-area: sectiona ;
+	background-color:;
+
+}
+
+.sidebar{
+	grid-area: sidebar;
+	background-color:;
+	padding-left: 10%;
+	padding-top: 5%;
+}
+
+.footer{
+	grid-area: footer;
+	background-color: #D80C8C;
+}
+
+#articlemarca{
+	background-color: #D80C8C;
+	width: 30%;
+	height: 90%;
+	float:left;
+	padding-left: 2%;
+	padding-top: 1%;
+}
+
+#articlemenu{
+	background-color: #D80C8C;
+	width: 50%;
+	height: 90%;
+	float:right;
+	padding-top: 2.5%;
+}
+
+#menu li a{
+	margin-left: 10%;
+	padding-left: 4%;
+	font-size: 19px;
+	text-decoration: none;
+	color: #ecf0f1;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+li{
+	display: inline;
+}
+
+#texto{
+	width: 400px;
+	height: 300px;
+	background-color: #E66BAB;
+	margin-top: 8%;
+	margin-left: 8%;
+	margin-bottom: 2%;
+	padding: 6% 6% 4% 4%;
+	border-radius: 4%;
+}
+
+#rosamobile{
+	display: none;
+	margin: 1% auto 10% 15%;
+	height: 300px;
+	width: 300px;
+}
+
+#boxfooter_a{
+	background-color: #D80C8C;
+	width: 30%;
+	height: 80%;
+	float:left;
+	padding-left: 2%;
+	padding-top: 1%;
+}
+
+#boxfooter_b{
+	background-color: #D80C8C;
+	width: 30%;
+	height: 80%;
+	float:left;
+	margin-left: 5%;
+	padding-left: 8%;
+	padding-top: 1%;
+}
+
+#boxfooter_c{
+	background-color: #D80C8C;
+	width: 30%;
+	height: 80%;
+	float:right;
+    padding-left: 16%;
+    padding-top: 1.5%;
+}
+
+#debesabianca{
+	text-decoration: none;
+	color: #ecf0f1;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 20px;
+}
+
+#fondob{
+	background-image: url(../img/fondoindex.png);
+	background-size: cover;
+}
+
+#fondomobile{
+	background-image: url(../img/fondomobile.jpg);
+	width: 100%;
+	height: 320px;
+	display: none;
+}
+
+.tituloindex{
+	font-size: 32px;
+	font-weight: bold;
+	color: #79F1D6;
+
+}
+
+.parrafoindex{
+	font-size: 18px;
+}
+
+@media(min-width: 900px) and (max-width: 1199px) {
+	.grid_container{
+		grid-template: 
+		"header    header    header" 100px
+	   "sectiona  sectiona  sidebar" auto
+	   "sectiona  sectiona  sidebar" auto
+	   "footer    footer    footer" 70px
+		 
+	}
+
+	#articlemarca{ width: 40%; padding-left: 3%; padding-top: 2%;}
+    #boxfooter_a{ padding-left: 3%;}
+    #boxfooter_b{ padding-left: 6%;}
+    #logofacebook{height: 40px; width: 40px;}
+    #logoinstagram{height: 40px; width: 40px;}
+    #logoyoutube{height: 42px; width: 42px;}
+    #debesabianca{font-size: 18px;}
+
+    #menu li a{
+	margin-left: 8%;
+	padding-left: 4%;
+	font-size: 19px;}
+    
+    #articlemenu{ padding-top: 4.5%;}
+
+    #texto{ width: 340px; height: 230px; margin-top: 15%;}
+
+    .parrafoindex{ font-size: 16px; }
+
+    .tituloindex{ font-size: 29px;}
+
+    #boxfooter_c{ padding-left: 10%; padding-top: 3%;}
+
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767px){
+main{min-width: 100%;}
+.grid_container{
+		grid-template: 
+		"header " 100px
+	   "sectiona " auto
+	   "sidebar" auto
+	   "footer" 70px
+		}
+.sectiona{background-color: #D75FD7}
+.sidebar{background-color:#D75FD7}
+#texto{margin:5% auto 5% auto; height:230px; background-color: #E895EF;}
+.tituloindex{color: #812491;}
+#articlemarca{width: 50%; padding: 2% 2% 2% 4%;}
+#boxfooter_a{padding-left: 4%;}
+#boxfooter_b{width: 40%; margin-left: 0%; padding-left: 3%;}
+#boxfooter_c{padding-left: 2%; padding-top: 3%;}
+#fondomobile{display: block;}
+#rosa{display: none;}
+#rosamobile{display: block;}
+}
+
+}
